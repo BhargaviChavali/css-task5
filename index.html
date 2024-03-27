@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .main::-webkit-scrollbar{
+                display: none;
+        }
+    
+        
+        .main{
+              height:550px;
+              width:285px;
+              overflow-y: scroll; 
+              scrollbar-width: none;
+            border:1px solid ;
+            background-image: url(https://cdn.wallpapersafari.com/54/0/HluF7g.jpg);
+            
+        
+            .fb1{
+            background-color:rgb(19, 181, 19);
+            width: 285px;
+            height:40px;
+            padding-bottom: 5px;
+            color:aliceblue;
+            size:5px;
+            font-size:22px;
+            display:flex;
+            align-items:baseline;
+            z-index: 1;
+            display:flex;
+            align-items: center;
+            justify-items: center;
+            position: fixed;
+        }
+        .cd1{
+            display:flex;
+            align-items: center;
+        }
+        .image{
+             height:25px;
+             width:40px;
+             border-radius: 50%;
+        }
+        img{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+        .cd2{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 13px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 100px;
+            position:sticky;
+            top:50px;
+        
+        }
+        .cd3{
+            border:1px solid;
+            background-color: white;
+            width: 80px;
+            height: 15px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;
+        }
+        .cd4{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd5{
+            border:1px solid;
+            background-color: white;
+            width: 130px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 5px;    
+        }
+        .cd6{
+            border:1px solid;
+            background-color: white;
+            width: 130px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 140px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd7{
+            border:1px solid;
+            background-color: white;
+            width: 70px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd8{
+            border:1px solid;
+            background-color: white;
+            width: 170px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 100px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd9{
+            border:1px solid;
+            background-color: white;
+            width: 150px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;   
+            margin-left: 5px; 
+        }
+        .cd10{
+            border:1px solid;
+            background-color: white;
+            width: 200px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 70px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd11{
+            border:1px solid;
+            background-color: white;
+            width: 140px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd12{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 180px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd13{
+            border:1px solid;
+            background-color: white;
+            width: 180px;
+            height: 16px;
+            border-radius: 10px;
+            padding:5px; 
+            margin-left: 5px;   
+        }
+        .cd14{
+            border:1px solid;
+            background-color: white;
+            width: 180px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 90px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd15{
+            border:1px solid;
+            background-color: white;
+            width: 70px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd16{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 180px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd17{
+            border:1px solid;
+            background-color: white;
+            width: 190px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd18{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd19{
+            border:1px solid;
+            background-color: white;
+            width: 70px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd20{
+            border:1px solid;
+            background-color: white;
+            width: 80px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 190px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd21{
+            border:1px solid;
+            background-color: white;
+            width: 70px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd22{
+            border:1px solid;
+            background-color: white;
+            width: 80px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 190px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd23{
+            border:1px solid;
+            background-color: white;
+            width: 70px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd24{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 13px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 100px;
+            position:sticky;
+            top:50px;
+        }
+        .cd25{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 180px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd26{
+            border:1px solid;
+            background-color: white;
+            width: 80px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd27{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd28{
+            border:1px solid;
+            background-color: white;
+            width: 80px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd29{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd30{
+            border:1px solid;
+            background-color: white;
+            width: 80px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd31{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd32{
+            border:1px solid;
+            background-color: white;
+            width: 80px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd33{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd34{
+            border:1px solid;
+            background-color: white;
+            width: 85px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd35{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd36{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd37{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd38{
+            border:1px solid;
+            background-color: white;
+            width: 92px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd39{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 13px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 100px; 
+            position:sticky;
+            top:50px;
+        }
+        .cd40{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd41{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd42{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd43{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd44{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd45{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd46{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd47{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd48{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd49{
+            border:1px solid;
+            background-color: white;
+            width: 95px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd50{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd51{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd52{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd53{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd54{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd55{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd56{
+            border:1px solid;
+            background-color: white;
+            width: 100px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 170px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd57{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd58{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd59{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd60{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd61{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd62{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd63{
+            border:1px solid;
+            background-color: white;
+            width: 85px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .cd64{
+            border:1px solid;
+            background-color: white;
+            width: 110px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 160px;
+            background-color:rgba(105, 246, 105, 0.7);
+        }
+        .cd65{
+            border:1px solid;
+            background-color: white;
+            width: 90px;
+            height: 16px;
+            border-radius: 10px;
+            padding: 5px; 
+            margin-left: 5px;   
+        }
+        .fb{
+            width:250px ;
+            height:30px;
+            border: 1px solid;
+            border-radius: 10px;
+            display:flex;
+            align-items: center;
+            justify-items: center;
+            position: fixed;
+            top: 525px;
+            background-color: white;
+        
+
+        .cd66{
+            display:flex;
+            align-items: center;
+            
+        }}
+        
+        
+    }
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+    <div class="main">  
+        <div class="fb1">
+            <div class="cd1">
+                <ion-icon name="arrow-back"></ion-icon>
+                <div class="image">
+                    <img src="./image.jpg">
+                    </div>
+                    <p style="margin-left:-5px;margin-bottom:15px;">Vibha</p>
+                    <ion-icon name="videocam" style="margin-left: 75px;margin-bottom:-11px;font-size: 25px;"></ion-icon>
+                    <ion-icon name="call" style="margin-left: 20px;margin-bottom:-11px"></ion-icon>
+                    <ion-icon name="ellipsis-vertical" style="margin-left: 10px;margin-bottom:-11px"></ion-icon>
+                 
+            </div>
+              </div>
+              <br><br>
+
+
+    <div class="cd2">March 18,2024 </div><br>
+    <div class="cd3">Hii <sub style="font-size: 10px;margin-left: 8px">10.00AM</sub></div><br>
+    <div class="cd4">Hello<sub style="font-size: 10px;margin-left: 8px">10.00AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd5">How are you<sub style="font-size: 10px;margin-left: 8px">10.00AM</sub></div><br>
+    <div class="cd6">I am fine<sub style="font-size: 10px;margin-left: 8px">10.00AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd7">Ha<sub style="font-size: 10px;margin-left: 8px">10.01AM</sub></div>
+    <div class="cd8">What about you<sub style="font-size: 10px;margin-left: 8px">10.01AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd9">Yeah, I am fine<sub style="font-size: 10px;margin-left: 8px">10.01AM</sub></div><br>
+    <div class="cd10">How is your parents<sub style="font-size: 10px;margin-left: 8px">10.01AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd11">They are fine<sub style="font-size: 10px;margin-left: 8px">10.02AM</sub></div><br>
+    <div class="cd12">Ha<sub style="font-size: 10px;margin-left: 8px">10.02AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd13">How is your parents<sub style="font-size: 10px;margin-left: 8px">10.02AM</sub></div><br>
+    <div class="cd14">yeah,they are fine<sub style="font-size: 10px;margin-left: 8px">10.03AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd15">ok<sub style="font-size: 10px;margin-left: 8px">10.03AM</sub></div><br>
+    <div class="cd16">Ha<sub style="font-size: 10px;margin-left: 8px">10.03AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd17">what are your studing<sub style="font-size: 10px;margin-left: 8px">10.03AM</sub></div><br>
+    <div class="cd18">Right <sub style="font-size: 10px;margin-left: 8px">10.03AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd19">Ha<sub style="font-size: 10px;margin-left: 8px">10.04AM</sub></div><br>
+    <div class="cd20">ok<sub style="font-size: 10px;margin-left: 8px">10.04AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd21">Ha<sub style="font-size: 10px;margin-left: 8px">10.04am</sub></div><br>
+    <div class="cd22">ok<sub style="font-size: 10px;margin-left: 8px">10.04Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd23">Ha<sub style="font-size: 10px;margin-left: 8px">10.04Am</sub></div><br>
+    <div class="cd24">March 19,2024</div><br>
+    <div class="cd25">.......<sub style="font-size: 10px;margin-left: 8px">12.30PM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd26">........<sub style="font-size: 10px;margin-left: 8px">12.30PM</sub></div><br>
+    <div class="cd27">........<sub style="font-size: 10px;margin-left: 8px">12.30PM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd28">........<sub style="font-size: 10px;margin-left: 8px">12.30PM</sub></div><br>
+    <div class="cd29">........<sub style="font-size: 10px;margin-left: 8px">12.31PM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd30">........<sub style="font-size: 10px;margin-left: 8px">12.31PM</sub></div><br>
+    <div class="cd31">........<sub style="font-size: 10px;margin-left: 8px">12.31PM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd32">.........<sub style="font-size: 10px;margin-left: 8px">12.32PM</sub></div><br>
+    <div class="cd33">.........<sub style="font-size: 10px;margin-left: 8px">12.32PM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd34">..........<sub style="font-size: 10px;margin-left: 8px">12.33PM</sub></div><br>
+    <div class="cd35">..........<sub style="font-size: 10px;margin-left: 8px">12.33PM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd36">...........<sub style="font-size: 10px;margin-left: 8px">12.40PM</sub></div><br>
+    <div class="cd37">............<sub style="font-size: 10px;margin-left: 8px">12.40PM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd38">............<sub style="font-size: 10px;margin-left: 8px">12.40PM</sub></div><br>
+    <div class="cd39">March 20,2024</div><br>
+    <div class="cd40">........<sub style="font-size: 10px;margin-left: 8px">10.00AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd41">..........<sub style="font-size: 10px;margin-left: 8px">10.00Am</sub></div><br>
+    <div class="cd42">........<sub style="font-size: 10px;margin-left: 8px">10.00Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd43">.........<sub style="font-size: 10px;margin-left: 8px">10.00AM</sub></div><br>
+    <div class="cd44">..........<sub style="font-size: 10px;margin-left: 8px">10.01AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd45">...........<sub style="font-size: 10px;margin-left: 8px">10.01Am</sub></div><br>
+    <div class="cd46">...........<sub style="font-size: 10px;margin-left: 8px">10.02AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd47">.........<sub style="font-size: 10px;margin-left: 8px">10.02AM</sub></div><br>
+    <div class="cd48">..........<sub style="font-size: 10px;margin-left: 8px">10.02AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd49">...........<sub style="font-size: 10px;margin-left: 8px">10.03AM</sub></div><br>
+    <div class="cd50">...........<sub style="font-size: 10px;margin-left: 8px">10.04Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br><br>
+    <div class="cd51">.........<sub style="font-size: 10px;margin-left: 8px">10.04AM</sub></div><br>
+    <div class="cd52">..........<sub style="font-size: 10px;margin-left: 8px">10.04Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd53">.........<sub style="font-size: 10px;margin-left: 8px">10.04Am</sub></div><br>
+    <div class="cd54">.........<sub style="font-size: 10px;margin-left: 8px">10.05AM</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd55">.........<sub style="font-size: 10px;margin-left: 8px">10.05Am</sub></div><br>
+    <div class="cd56">.........<sub style="font-size: 10px;margin-left: 8px">10.10Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd57">..........<sub style="font-size: 10px;margin-left: 8px">10.20Am</sub></div><br>
+    <div class="cd58">..........<sub style="font-size: 10px;margin-left: 8px">10.21Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd59">...........<sub style="font-size: 10px;margin-left: 8px">10.22Am</sub></div><br>
+    <div class="cd60">...........<sub style="font-size: 10px;margin-left: 8px">10.23Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd61">...........<sub style="font-size: 10px;margin-left: 8px">10.24Am</sub></div><br>
+    <div class="cd62">...........<sub style="font-size: 10px;margin-left: 8px">10.25Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd63">..........<sub style="font-size: 10px;margin-left: 8px">10.30Am</sub></div><br>
+    <div class="cd64">..........<sub style="font-size: 10px;margin-left: 8px">10.33Am</sub><ion-icon name="checkmark-done-outline" style="color:blue"></ion-icon></div><br>
+    <div class="cd65">..........<sub style="font-size: 10px;margin-left: 8px">11.00AM</sub></div><br><br>
+  
+    <div class="fb">
+        <div class="cd66"><ion-icon name="happy" style="color:rgb(75, 72, 72);font-size: 20px;"></ion-icon><p style="margin-left: 10px;">Message</p>
+            <ion-icon name="attach" style="font-size: 25px;margin-left: 80px;color:rgb(75, 72, 72)"></ion-icon>
+
+            <ion-icon name="camera" style="font-size: 25px;margin-left: 10px;color:rgb(75, 72, 72)"></ion-icon>
+            <ion-icon name="mic-circle" style="font-size: 30px;margin-left: 28px;color:green;background-color: white;"></ion-icon>
+        
+        </div>
+          </div>
+        
+    
+</div>
+    
+</body>
+</html>
